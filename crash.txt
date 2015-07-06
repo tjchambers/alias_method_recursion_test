@@ -1,0 +1,227 @@
+F/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:544: [BUG] vm_call_cfunc - cfp consistency error
+ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-darwin14]
+
+-- Crash Report log information --------------------------------------------
+   See Crash Report log file under the one of following:
+     * ~/Library/Logs/CrashReporter
+     * /Library/Logs/CrashReporter
+     * ~/Library/Logs/DiagnosticReports
+     * /Library/Logs/DiagnosticReports
+   for more details.
+
+-- Control frame information -----------------------------------------------
+c:0020 p:---- s:0080 e:000079 CFUNC  :map
+c:0019 p:0014 s:0077 e:000076 METHOD /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:544
+c:0018 p:0102 s:0073 e:000072 METHOD /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:512
+c:0017 p:0010 s:0065 e:000064 BLOCK  /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:513 [FINISH]
+c:0016 p:---- s:0062 e:000061 CFUNC  :map
+c:0015 p:0116 s:0059 e:000058 METHOD /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:513
+c:0014 p:0011 s:0051 e:000050 BLOCK  /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:110 [FINISH]
+c:0013 p:---- s:0048 e:000047 CFUNC  :map
+c:0012 p:0009 s:0045 e:000044 BLOCK  /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:110
+c:0011 p:0046 s:0043 e:000042 METHOD /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1526
+c:0010 p:0009 s:0039 e:000038 BLOCK  /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:109
+c:0009 p:0017 s:0036 e:000035 METHOD /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:62
+c:0008 p:0018 s:0032 e:000031 METHOD /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108
+c:0007 p:0022 s:0028 e:000027 METHOD /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86
+c:0006 p:0088 s:0023 e:000022 METHOD /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70
+c:0005 p:0024 s:0016 e:000015 METHOD /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38
+c:0004 p:0023 s:0012 e:000011 TOP    /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-core-3.2.0/exe/rspec:4 [FINISH]
+c:0003 p:---- s:0010 e:000009 CFUNC  :load
+c:0002 p:0135 s:0006 E:001a70 EVAL   /Users/tj/.rvm/gems/ruby-2.2.0/bin/rspec:23 [FINISH]
+c:0001 p:0000 s:0002 E:0022d0 TOP    [FINISH]
+
+-- Ruby level backtrace information ----------------------------------------
+/Users/tj/.rvm/gems/ruby-2.2.0/bin/rspec:23:in `<main>'
+/Users/tj/.rvm/gems/ruby-2.2.0/bin/rspec:23:in `load'
+/Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-core-3.2.0/exe/rspec:4:in `<top (required)>'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:38:in `invoke'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:70:in `run'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:86:in `run'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:108:in `run_specs'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb:62:in `report'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:109:in `block in run_specs'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb:1526:in `with_suite_hooks'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:110:in `block (2 levels) in run_specs'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:110:in `map'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb:110:in `block (3 levels) in run_specs'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:513:in `run'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:513:in `map'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:513:in `block in run'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:512:in `run'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:544:in `run_examples'
+/Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb:544:in `map'
+
+-- C level backtrace information -------------------------------------------
+0   libruby.2.2.0.dylib                 0x0000000109fb4cfb rb_vm_bugreport + 155
+1   libruby.2.2.0.dylib                 0x0000000109e58ecb rb_bug + 475
+2   libruby.2.2.0.dylib                 0x0000000109fb32b4 vm_call_cfunc + 2468
+3   libruby.2.2.0.dylib                 0x0000000109fb2280 vm_call_method + 880
+4   libruby.2.2.0.dylib                 0x0000000109f96f78 vm_exec_core + 12136
+5   libruby.2.2.0.dylib                 0x0000000109fa6801 vm_exec + 129
+6   libruby.2.2.0.dylib                 0x0000000109fab9de invoke_block_from_c + 2382
+7   libruby.2.2.0.dylib                 0x0000000109fa2b80 rb_yield + 192
+8   libruby.2.2.0.dylib                 0x0000000109e23609 rb_ary_collect + 137
+9   libruby.2.2.0.dylib                 0x0000000109fb2f37 vm_call_cfunc + 1575
+10  libruby.2.2.0.dylib                 0x0000000109fb2280 vm_call_method + 880
+11  libruby.2.2.0.dylib                 0x0000000109f96f78 vm_exec_core + 12136
+12  libruby.2.2.0.dylib                 0x0000000109fa6801 vm_exec + 129
+13  libruby.2.2.0.dylib                 0x0000000109fa673d rb_iseq_eval + 285
+14  libruby.2.2.0.dylib                 0x0000000109e670f7 rb_load_internal0 + 311
+15  libruby.2.2.0.dylib                 0x0000000109e66daa rb_f_load + 186
+16  libruby.2.2.0.dylib                 0x0000000109fb2f37 vm_call_cfunc + 1575
+17  libruby.2.2.0.dylib                 0x0000000109fb2280 vm_call_method + 880
+18  libruby.2.2.0.dylib                 0x0000000109f9714d vm_exec_core + 12605
+19  libruby.2.2.0.dylib                 0x0000000109fa6801 vm_exec + 129
+20  libruby.2.2.0.dylib                 0x0000000109fa77c9 rb_iseq_eval_main + 393
+21  libruby.2.2.0.dylib                 0x0000000109e61e94 ruby_exec_internal + 148
+22  libruby.2.2.0.dylib                 0x0000000109e61dbe ruby_run_node + 78
+23  ruby                                0x0000000109e16f1f main + 79
+
+-- Other runtime information -----------------------------------------------
+
+* Loaded script: /Users/tj/.rvm/gems/ruby-2.2.0/bin/rspec
+
+* Loaded features:
+
+    0 enumerator.so
+    1 rational.so
+    2 complex.so
+    3 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/x86_64-darwin14/enc/encdb.bundle
+    4 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/x86_64-darwin14/enc/trans/transdb.bundle
+    5 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/unicode_normalize.rb
+    6 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/x86_64-darwin14/rbconfig.rb
+    7 thread.rb
+    8 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/x86_64-darwin14/thread.bundle
+    9 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/compatibility.rb
+   10 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/defaults.rb
+   11 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/deprecate.rb
+   12 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/errors.rb
+   13 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/version.rb
+   14 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/requirement.rb
+   15 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/platform.rb
+   16 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/basic_specification.rb
+   17 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/stub_specification.rb
+   18 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/util/stringio.rb
+   19 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/specification.rb
+   20 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/exceptions.rb
+   21 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/core_ext/kernel_gem.rb
+   22 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/monitor.rb
+   23 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb
+   24 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems.rb
+   25 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/dependency.rb
+   26 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/rubygems/path_support.rb
+   27 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/version.rb
+   28 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/ruby_features.rb
+   29 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-support-3.2.2/lib/rspec/support.rb
+   30 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/caller_filter.rb
+   31 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/version.rb
+   32 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-support-3.2.2/lib/rspec/support/warnings.rb
+   33 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/warnings.rb
+   34 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/flat_map.rb
+   35 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/filter_manager.rb
+   36 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/dsl.rb
+   37 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/formatters/helpers.rb
+   38 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/encoded_string.rb
+   39 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/notifications.rb
+   40 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/reporter.rb
+   41 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/hooks.rb
+   42 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/memoized_helpers.rb
+   43 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/metadata.rb
+   44 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/metadata_filter.rb
+   45 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/pending.rb
+   46 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/directory_maker.rb
+   47 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/formatters.rb
+   48 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/ordering.rb
+   49 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/world.rb
+   50 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/backtrace_formatter.rb
+   51 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/ruby_project.rb
+   52 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/set.rb
+   53 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/formatters/deprecation_formatter.rb
+   54 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration.rb
+   55 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/optparse.rb
+   56 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/option_parser.rb
+   57 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/cgi/util.rb
+   58 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/x86_64-darwin14/strscan.bundle
+   59 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/erb.rb
+   60 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/shellwords.rb
+   61 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/configuration_options.rb
+   62 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/runner.rb
+   63 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example.rb
+   64 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/shared_example_group.rb
+   65 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/recursive_const_methods.rb
+   66 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/example_group.rb
+   67 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-core-3.2.0/lib/rspec/core.rb
+   68 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-3.2.0/lib/rspec/version.rb
+   69 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-3.2.0/lib/rspec.rb
+   70 /Users/tj/projects/alias_method_recursion_test/lib/bad.rb
+   71 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/warnings.rb
+   72 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/instance_method_stasher.rb
+   73 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/method_double.rb
+   74 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-support-3.2.2/lib/rspec/support/matcher_definition.rb
+   75 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/argument_matchers.rb
+   76 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/object_reference.rb
+   77 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/example_methods.rb
+   78 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/proxy.rb
+   79 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/test_double.rb
+   80 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-mocks-3.2.0/lib/rspec/mocks/argument_matchers.rb
+   81 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-support-3.2.2/lib/rspec/support/fuzzy_matcher.rb
+   82 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/argument_list_matcher.rb
+   83 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/message_expectation.rb
+   84 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/order_group.rb
+   85 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/error_generator.rb
+   86 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/space.rb
+   87 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/mutate_const.rb
+   88 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/targets.rb
+   89 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/syntax.rb
+   90 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/configuration.rb
+   91 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/matcher_definition.rb
+   92 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/method_signature_verifier.rb
+   93 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/verifying_message_expecation.rb
+   94 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/method_reference.rb
+   95 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/verifying_proxy.rb
+   96 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/x86_64-darwin14/stringio.bundle
+   97 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/verifying_double.rb
+   98 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-mocks-3.2.0/lib/rspec/mocks/version.rb
+   99 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-mocks-3.2.0/lib/rspec/mocks.rb
+  100 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/mocking_adapters/rspec.rb
+  101 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/matchers/pretty.rb
+  102 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/fuzzy_matcher.rb
+  103 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/matchers/composable.rb
+  104 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/matchers/built_in/base_matcher.rb
+  105 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/matchers/built_in.rb
+  106 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/matchers/generated_descriptions.rb
+  107 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/matchers/dsl.rb
+  108 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/matchers/matcher_delegator.rb
+  109 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/matchers/aliased_matcher.rb
+  110 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/matchers/expecteds_for_multiple_diffs.rb
+  111 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-expectations-3.2.0/lib/rspec/matchers.rb
+  112 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/expectations/expectation_target.rb
+  113 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/expectations/syntax.rb
+  114 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/expectations/configuration.rb
+  115 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/diff-lcs-1.2.5/lib/diff/lcs/change.rb
+  116 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/diff-lcs-1.2.5/lib/diff/lcs/callbacks.rb
+  117 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/diff-lcs-1.2.5/lib/diff/lcs/internals.rb
+  118 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/diff-lcs-1.2.5/lib/diff/lcs.rb
+  119 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/diff-lcs-1.2.5/lib/diff/lcs/block.rb
+  120 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/diff-lcs-1.2.5/lib/diff/lcs/hunk.rb
+  121 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/hunk_generator.rb
+  122 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/prettyprint.rb
+  123 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/pp.rb
+  124 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-support-3.2.2/lib/rspec/support/differ.rb
+  125 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/expectations/fail_with.rb
+  126 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/expectations/handler.rb
+  127 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-expectations-3.2.0/lib/rspec/expectations/version.rb
+  128 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-expectations-3.2.0/lib/rspec/expectations.rb
+  129 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/formatters/base_formatter.rb
+  130 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/formatters/console_codes.rb
+  131 /Users/tj/.rvm/rubies/ruby-2.2.0/lib/ruby/gems/2.2.0/gems/rspec-core-3.2.0/lib/rspec/core/formatters/base_text_formatter.rb
+  132 /Users/tj/.rvm/gems/ruby-2.2.0@global/gems/rspec-core-3.2.0/lib/rspec/core/formatters/progress_formatter.rb
+
+[NOTE]
+You may have encountered a bug in the Ruby interpreter or extension libraries.
+Bug reports are welcome.
+Don't forget to include the above Crash Report log file.
+For details: http://www.ruby-lang.org/bugreport.html
+
+Abort trap: 6
