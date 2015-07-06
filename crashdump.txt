@@ -1,0 +1,166 @@
+Process:               ruby [4056]
+Path:                  /Users/USER/*/ruby
+Identifier:            ruby
+Version:               0
+Code Type:             X86-64 (Native)
+Parent Process:        bash [99379]
+Responsible:           iTerm [645]
+User ID:               501
+
+Date/Time:             2015-07-06 11:34:49.461 -0700
+OS Version:            Mac OS X 10.10.4 (14E46)
+Report Version:        11
+Anonymous UUID:        FF44A40E-40BA-E69F-F3B6-3CA05C508C98
+
+
+Time Awake Since Boot: 270000 seconds
+
+Crashed Thread:        0  Dispatch queue: com.apple.main-thread
+
+Exception Type:        EXC_BAD_ACCESS (SIGABRT)
+Exception Codes:       KERN_PROTECTION_FAILURE at 0x00007fff555e9f58
+
+VM Regions Near 0x7fff555e9f58:
+    MALLOC_SMALL           00007feea3000000-00007feea5800000 [ 40.0M] rw-/rwx SM=PRV  
+--> STACK GUARD            00007fff51dea000-00007fff555ea000 [ 56.0M] ---/rwx SM=NUL  stack guard for thread 0
+    Stack                  00007fff555ea000-00007fff55dea000 [ 8192K] rw-/rwx SM=COW  thread 0
+
+Application Specific Information:
+abort() called
+
+Thread 0 Crashed:: Dispatch queue: com.apple.main-thread
+0   libsystem_kernel.dylib        	0x00007fff842f6286 __pthread_kill + 10
+1   libsystem_c.dylib             	0x00007fff8eb57b53 abort + 129
+2   libruby.2.2.0.dylib           	0x0000000109e58f29 die + 9
+3   libruby.2.2.0.dylib           	0x0000000109e58f1e rb_bug + 558
+4   libruby.2.2.0.dylib           	0x0000000109fb32b4 vm_call_cfunc + 2468
+5   libruby.2.2.0.dylib           	0x0000000109fb2280 vm_call_method + 880 (.vm_insnhelper.c:1656)
+6   libruby.2.2.0.dylib           	0x0000000109f96f78 vm_exec_core + 12136 (insns.def:1024)
+7   libruby.2.2.0.dylib           	0x0000000109fa6801 vm_exec + 129 (vm.c:1407)
+8   libruby.2.2.0.dylib           	0x0000000109fab9de invoke_block_from_c + 2382 (vm.c:823)
+9   libruby.2.2.0.dylib           	0x0000000109fa2b80 rb_yield + 192 (.vm_eval.c:967)
+10  libruby.2.2.0.dylib           	0x0000000109e23609 rb_ary_collect + 137 (array.c:2695)
+11  libruby.2.2.0.dylib           	0x0000000109fb2f37 vm_call_cfunc + 1575 (.vm_insnhelper.c:1360)
+12  libruby.2.2.0.dylib           	0x0000000109fb2280 vm_call_method + 880 (.vm_insnhelper.c:1656)
+13  libruby.2.2.0.dylib           	0x0000000109f96f78 vm_exec_core + 12136 (insns.def:1024)
+14  libruby.2.2.0.dylib           	0x0000000109fa6801 vm_exec + 129 (vm.c:1407)
+15  libruby.2.2.0.dylib           	0x0000000109fa673d rb_iseq_eval + 285 (vm.c:1665)
+16  libruby.2.2.0.dylib           	0x0000000109e670f7 rb_load_internal0 + 311 (load.c:614)
+17  libruby.2.2.0.dylib           	0x0000000109e66daa rb_f_load + 186 (load.c:705)
+18  libruby.2.2.0.dylib           	0x0000000109fb2f37 vm_call_cfunc + 1575 (.vm_insnhelper.c:1360)
+19  libruby.2.2.0.dylib           	0x0000000109fb2280 vm_call_method + 880 (.vm_insnhelper.c:1656)
+20  libruby.2.2.0.dylib           	0x0000000109f9714d vm_exec_core + 12605 (insns.def:1054)
+21  libruby.2.2.0.dylib           	0x0000000109fa6801 vm_exec + 129 (vm.c:1407)
+22  libruby.2.2.0.dylib           	0x0000000109fa77c9 rb_iseq_eval_main + 393 (vm.c:1678)
+23  libruby.2.2.0.dylib           	0x0000000109e61e94 ruby_exec_internal + 148 (eval.c:257)
+24  libruby.2.2.0.dylib           	0x0000000109e61dbe ruby_run_node + 78 (eval.c:309)
+25  ruby                          	0x0000000109e16f1f main + 79 (main.c:36)
+26  libdyld.dylib                 	0x00007fff8dd6f5c9 start + 1
+
+Thread 1:: ruby-timer-thr
+0   libsystem_kernel.dylib        	0x00007fff842f75c2 poll + 10
+1   libsystem_pthread.dylib       	0x00007fff871da268 _pthread_body + 131
+2   libsystem_pthread.dylib       	0x00007fff871da1e5 _pthread_start + 176
+3   libsystem_pthread.dylib       	0x00007fff871d841d thread_start + 13
+
+Thread 0 crashed with X86 Thread State (64-bit):
+  rax: 0x0000000000000000  rbx: 0x0000000000000006  rcx: 0x00007fff55de7ec8  rdx: 0x0000000000000000
+  rdi: 0x0000000000000713  rsi: 0x0000000000000006  rbp: 0x00007fff55de7ef0  rsp: 0x00007fff55de7ec8
+   r8: 0x00007fff55de7ea0   r9: 0x00007fff71041300  r10: 0x0000000008000000  r11: 0x0000000000000206
+  r12: 0x0000000000000070  r13: 0x00007fff723ac3f0  r14: 0x00007fff71041300  r15: 0x00007fff55de8010
+  rip: 0x00007fff842f6286  rfl: 0x0000000000000206  cr2: 0x00007fff723a9fd8
+  
+Logical CPU:     0
+Error Code:      0x02000148
+Trap Number:     133
+
+
+Binary Images:
+       0x109e16000 -        0x109e16fff +ruby (0) <C29EAF72-958A-35AF-B525-5A7394AE54E4> /Users/USER/*/ruby
+       0x109e1a000 -        0x10a041fff +libruby.2.2.0.dylib (0) <484B66EA-AF2B-3D60-9DCC-40607D71B540> /Users/USER/*/libruby.2.2.0.dylib
+       0x10a23a000 -        0x10a23bff7 +encdb.bundle (0) <F10154B0-3E41-3945-A409-8F14A3BA8185> /Users/USER/*/encdb.bundle
+       0x10a23e000 -        0x10a23fff7 +transdb.bundle (0) <629117B0-54BF-3969-997B-E33CC80D89F4> /Users/USER/*/transdb.bundle
+       0x10a242000 -        0x10a244fff +thread.bundle (0) <D453192B-5CF0-31D9-B95F-629DE2292826> /Users/USER/*/thread.bundle
+       0x10a249000 -        0x10a24cfff +strscan.bundle (0) <98FC0E38-7CE8-3846-8C1D-6D2B5C2450DB> /Users/USER/*/strscan.bundle
+       0x10a251000 -        0x10a255fff +stringio.bundle (0) <2FD6D6D1-70D4-3621-9B1F-61591BB14094> /Users/USER/*/stringio.bundle
+    0x7fff6e82f000 -     0x7fff6e865837  dyld (353.2.1) <72A99D0F-0B56-3938-ABC5-67A0F33757C4> /usr/lib/dyld
+    0x7fff8011c000 -     0x7fff8014cfff  libsystem_m.dylib (3086.1) <1E12AB45-6D96-36D0-A226-F24D9FB0D9D6> /usr/lib/system/libsystem_m.dylib
+    0x7fff801d1000 -     0x7fff801e7ff7  libsystem_asl.dylib (267) <F153AC5B-0542-356E-88C8-20A62CA704E2> /usr/lib/system/libsystem_asl.dylib
+    0x7fff80237000 -     0x7fff80238ff3  libSystem.B.dylib (1213) <AD223AEB-237D-35A3-825E-EECF95916838> /usr/lib/libSystem.B.dylib
+    0x7fff80239000 -     0x7fff8023eff7  libmacho.dylib (862) <126CA2ED-DE91-308F-8881-B9DAEC3C63B6> /usr/lib/system/libmacho.dylib
+    0x7fff80500000 -     0x7fff80579fe7  libcorecrypto.dylib (233.30.1) <5779FFA0-4D9A-3AD4-B7F2-618227621DC8> /usr/lib/system/libcorecrypto.dylib
+    0x7fff80589000 -     0x7fff8058bfff  libquarantine.dylib (76.20.1) <7AF90041-2768-378A-925A-D83161863642> /usr/lib/system/libquarantine.dylib
+    0x7fff80749000 -     0x7fff80749ff7  libkeymgr.dylib (28) <77845842-DE70-3CC5-BD01-C3D14227CED5> /usr/lib/system/libkeymgr.dylib
+    0x7fff807c8000 -     0x7fff807c9ff7  libsystem_blocks.dylib (65) <9615D10A-FCA7-3BE4-AA1A-1B195DACE1A1> /usr/lib/system/libsystem_blocks.dylib
+    0x7fff80bcf000 -     0x7fff80dc946f  libobjc.A.dylib (647) <759E155D-BC42-3D4E-869B-6F57D477177C> /usr/lib/libobjc.A.dylib
+    0x7fff812bf000 -     0x7fff812cafff  libcommonCrypto.dylib (60061.30.1) <E789748D-F9A7-3CFF-B317-90DF348B1E95> /usr/lib/system/libcommonCrypto.dylib
+    0x7fff812cb000 -     0x7fff814b0ff7  libicucore.A.dylib (531.48) <3CD34752-B1F9-31D2-865D-B5B0F0BE3111> /usr/lib/libicucore.A.dylib
+    0x7fff818a0000 -     0x7fff818a1ffb  libremovefile.dylib (35) <3485B5F4-6CE8-3C62-8DFD-8736ED6E8531> /usr/lib/system/libremovefile.dylib
+    0x7fff818af000 -     0x7fff818b0fff  libDiagnosticMessagesClient.dylib (100) <2EE8E436-5CDC-34C5-9959-5BA218D507FB> /usr/lib/libDiagnosticMessagesClient.dylib
+    0x7fff818c7000 -     0x7fff818c8fff  libsystem_secinit.dylib (18) <581DAD0F-6B63-3A48-B63B-917AF799ABAA> /usr/lib/system/libsystem_secinit.dylib
+    0x7fff819e6000 -     0x7fff819ebff7  libunwind.dylib (35.3) <BE7E51A0-B6EA-3A54-9CCA-9D88F683A6D6> /usr/lib/system/libunwind.dylib
+    0x7fff81a08000 -     0x7fff81a0eff7  libsystem_networkextension.dylib (167.30.1) <3E99FF35-DCBB-3A4C-8853-F1F39A792D29> /usr/lib/system/libsystem_networkextension.dylib
+    0x7fff81ea1000 -     0x7fff81eaaff7  libsystem_notify.dylib (133.1.1) <61147800-F320-3DAA-850C-BADF33855F29> /usr/lib/system/libsystem_notify.dylib
+    0x7fff81f95000 -     0x7fff81f9cff7  libcompiler_rt.dylib (35) <BF8FC133-EE10-3DA6-9B90-92039E28678F> /usr/lib/system/libcompiler_rt.dylib
+    0x7fff820d6000 -     0x7fff820d8ff7  libsystem_coreservices.dylib (9) <41B7C578-5A53-31C8-A96F-C73E030B0938> /usr/lib/system/libsystem_coreservices.dylib
+    0x7fff842e0000 -     0x7fff842fdfff  libsystem_kernel.dylib (2782.30.5) <101D28C0-AF07-3B81-87BE-CA27ADED33AB> /usr/lib/system/libsystem_kernel.dylib
+    0x7fff84a3c000 -     0x7fff84a42fff  libsystem_trace.dylib (72.20.1) <840F5301-B55A-3078-90B9-FEFFD6CD741A> /usr/lib/system/libsystem_trace.dylib
+    0x7fff85074000 -     0x7fff8509cfff  libsystem_info.dylib (459.20.1) <AEB3FE62-4763-3050-8352-D6F9AF961AE6> /usr/lib/system/libsystem_info.dylib
+    0x7fff85308000 -     0x7fff85340fff  libsystem_network.dylib (412.20.3) <6105C134-6722-3C0A-A4CE-5E1261E2E1CC> /usr/lib/system/libsystem_network.dylib
+    0x7fff871d7000 -     0x7fff871e0fff  libsystem_pthread.dylib (105.10.1) <3103AA7F-3BAE-3673-9649-47FFD7E15C97> /usr/lib/system/libsystem_pthread.dylib
+    0x7fff88425000 -     0x7fff8844dfff  libxpc.dylib (559.30.1) <80D68997-17B9-32B6-A5FA-A218216415E5> /usr/lib/system/libxpc.dylib
+    0x7fff89d14000 -     0x7fff89d16fff  libsystem_sandbox.dylib (358.20.5) <3F5E973F-C702-31AC-97BC-05F5C195683C> /usr/lib/system/libsystem_sandbox.dylib
+    0x7fff8ad5a000 -     0x7fff8ad84ff7  libdispatch.dylib (442.1.4) <502CF32B-669B-3709-8862-08188225E4F0> /usr/lib/system/libdispatch.dylib
+    0x7fff8ad90000 -     0x7fff8b128ff7  com.apple.CoreFoundation (6.9 - 1153.18) <5C0892B8-9691-341F-9279-CA3A74D59AA0> /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+    0x7fff8b1be000 -     0x7fff8b1c6ffb  libcopyfile.dylib (118.1.2) <0C68D3A6-ACDD-3EF3-991A-CC82C32AB836> /usr/lib/system/libcopyfile.dylib
+    0x7fff8b239000 -     0x7fff8b264fff  libc++abi.dylib (125) <88A22A0F-87C6-3002-BFBA-AC0F2808B8B9> /usr/lib/libc++abi.dylib
+    0x7fff8b29e000 -     0x7fff8b2a6fff  libsystem_platform.dylib (63) <64E34079-D712-3D66-9CE2-418624A5C040> /usr/lib/system/libsystem_platform.dylib
+    0x7fff8b32f000 -     0x7fff8b34bff7  libsystem_malloc.dylib (53.30.1) <DDA8928B-CC0D-3255-BD8A-3FEA0982B890> /usr/lib/system/libsystem_malloc.dylib
+    0x7fff8b34c000 -     0x7fff8b392ff7  libauto.dylib (186) <A260789B-D4D8-316A-9490-254767B8A5F1> /usr/lib/libauto.dylib
+    0x7fff8b63e000 -     0x7fff8b643fff  libsystem_stats.dylib (163.30.2) <48A9387D-5C63-3E79-979C-F675552F6FC9> /usr/lib/system/libsystem_stats.dylib
+    0x7fff8b8e7000 -     0x7fff8b93bfff  libc++.1.dylib (120) <1B9530FD-989B-3174-BB1C-BDC159501710> /usr/lib/libc++.1.dylib
+    0x7fff8c4bc000 -     0x7fff8c4bcff7  liblaunch.dylib (559.30.1) <B1301610-D60C-3301-B254-11F066BD48A7> /usr/lib/system/liblaunch.dylib
+    0x7fff8cfdc000 -     0x7fff8cfedff7  libz.1.dylib (55) <88C7C7DE-04B8-316F-8B74-ACD9F3DE1AA1> /usr/lib/libz.1.dylib
+    0x7fff8d459000 -     0x7fff8d46aff3  libsystem_coretls.dylib (35.30.2) <0F7BAD0C-FC28-3E4B-8D21-06B426599043> /usr/lib/system/libsystem_coretls.dylib
+    0x7fff8dd6c000 -     0x7fff8dd6fff7  libdyld.dylib (353.2.1) <78E8F33D-0C86-3DB6-A93D-B67A25BA3522> /usr/lib/system/libdyld.dylib
+    0x7fff8eacb000 -     0x7fff8ead3fff  libsystem_dnssd.dylib (576.30.4) <4EA2DEC3-77EE-3941-A703-DE6DC2056B15> /usr/lib/system/libsystem_dnssd.dylib
+    0x7fff8eafa000 -     0x7fff8eb86ff7  libsystem_c.dylib (1044.10.1) <86FBED7A-F2C8-3591-AD6F-486DD57E6B6A> /usr/lib/system/libsystem_c.dylib
+    0x7fff8f763000 -     0x7fff8f767fff  libcache.dylib (69) <45E9A2E7-99C4-36B2-BEE3-0C4E11614AD1> /usr/lib/system/libcache.dylib
+    0x7fff8f768000 -     0x7fff8f76afff  libsystem_configuration.dylib (699.30.1) <B124CC64-59B9-354F-A693-B3431ADB87AC> /usr/lib/system/libsystem_configuration.dylib
+    0x7fff8fbae000 -     0x7fff8fbaeff7  libunc.dylib (29) <5676F7EA-C1DF-329F-B006-D2C3022B7D70> /usr/lib/system/libunc.dylib
+
+External Modification Summary:
+  Calls made by other processes targeting this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by this process:
+    task_for_pid: 0
+    thread_create: 0
+    thread_set_state: 0
+  Calls made by all processes on this machine:
+    task_for_pid: 171309
+    thread_create: 0
+    thread_set_state: 0
+
+VM Region Summary:
+ReadOnly portion of Libraries: Total=85.2M resident=61.4M(72%) swapped_out_or_unallocated=23.8M(28%)
+Writable regions: Total=84.7M written=9812K(11%) resident=21.6M(25%) swapped_out=0K(0%) unallocated=63.1M(75%)
+ 
+REGION TYPE                      VIRTUAL
+===========                      =======
+Kernel Alloc Once                     4K
+MALLOC                             76.3M
+MALLOC (admin)                       16K
+STACK GUARD                        56.0M
+Stack                              8216K
+VM_ALLOCATE                          12K
+__DATA                             1268K
+__LINKEDIT                         71.6M
+__TEXT                             13.6M
+__UNICODE                           552K
+shared memory                         4K
+===========                      =======
+TOTAL                             227.3M
+
+ 
